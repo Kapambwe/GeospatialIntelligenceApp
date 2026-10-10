@@ -165,6 +165,10 @@ button, a, input, select, textarea {
 .map-feature-point:hover, .map-feature-point:focus, .map-feature-point.selected { stroke-width: 2.3; }
 .map-feature-point.selected { stroke: #fef08a; }
 .map-scale-label { position: absolute; bottom: .75rem; left: .75rem; color: #e0f2fe; font-size: .75rem; background: rgba(15,23,42,.72); padding: .25rem .5rem; border-radius: .25rem; }
+.map-legend-swatch { display: inline-block; width: .85rem; height: .85rem; border-radius: 50%; flex: 0 0 auto; box-shadow: 0 0 0 2px rgba(255,255,255,.9), 0 1px 3px rgba(15,23,42,.25); }
+.map-legend-swatch-alert { background: #dc2626; }
+.map-legend-swatch-warning { background: #2563eb; }
+.map-legend-swatch-review { background: #d97706; }
 .map-feature-detail { background: #f8fafc; border: 1px solid #dbeafe; }
 
 .leaflet-map-host {
@@ -177,6 +181,19 @@ button, a, input, select, textarea {
 
 .leaflet-measuring { cursor: crosshair !important; }
 .leaflet-measurement-label { font-weight: 700; border: 1px solid #f59e0b; color: #92400e; }
+
+.map-analysis-dialog .rz-dialog-content {
+    padding: 1rem;
+    background: #f8fafc;
+}
+
+.map-analysis-dialog-content .map-analysis-canvas-card {
+    min-height: 62vh;
+}
+
+.map-analysis-dialog-content .leaflet-map-host {
+    min-height: 56vh;
+}
 
 .evidence-artifact-preview {
     min-height: 190px;
